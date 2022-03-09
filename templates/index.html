@@ -1,3 +1,5 @@
+{% load static %}
+<!--img src="{% static 'my_app/example.jpg' %}" alt="My image"-->
 <html>
     <head>
         <title>Bucky</title>
@@ -13,14 +15,14 @@
         <script src="{% static 'home/js/cycle2.js' %}"></script>
         <script src="js/index.js"></script>
         <script src="js/float-panel.js"></script>-->
-        <link rel ="stylesheet" href="css/index.css">
+        <link rel ="stylesheet" href="{% static 'css/index.css' %}">
     </head>
     <body>
         <div id="navbar_hero_overlay_combined">
             <div class="dual-navbar"><a href="#"><span class="active">For Shoppers</span></a><a href="#"><span>For Business</span></a></div>
             <div class="navbar_hero_overlay_combined_container">
                 <nav class="navbar sticky-top navbar-expand-lg navbar-dark" style="background-color: transparent;">
-                    <a class="navbar-brand" href="#"><img src="images/bucky_logo_white.png" alt="bucky-logo" style="width: 70px;"></a>
+                    <a class="navbar-brand" href="#"><img src="{% static 'images/bucky_logo_white.png'%}" alt="bucky-logo" style="width: 70px;"></a>
                 <button class="navbar-toggler" style="border: 1px solid #fff;" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
                     <span class="navbar-toggler-icon"><i class="fas fa-bars" style="color:#ffffff; font-size:28px; float: right"></i></span>
                 </button>
@@ -44,11 +46,11 @@
                         <p>Make your finances simple with Buckyy! Buy what you want, whenever you want, and pay later. Spend your money wisely. We have the best deals and the most transparent installment plans ever. Here’s your chance to pay smart. </p>
                     </div>
                     <div id="small-screen">
-                        <img src="images/bucky_logo_white_cropped.png">
+                        <img src="{% static  'images/bucky_logo_white_cropped.png' % }">
                     </div>
                 </div>
                 <div class="right-section" id="big-screen">
-                    <img src="images/bucky_logo_white_cropped.png">
+                    <img src="{% static 'images/bucky_logo_white_cropped.png'%}">
                 </div>
             </div>
         </div>
@@ -147,17 +149,17 @@
             <div class="process-section-right">
                 <div class="process-section-cards">
                     <div class="process-section-card">
-                        <img src="images/head.png">
+                        <img src="static/images/head.png">
                         <h2>Choose how to pay</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et doloremagna aliqua. Ut</p>
                     </div>
                     <div class="process-section-card">
-                        <img src="images/head.png">
+                        <img src="static/images/head.png">
                         <h2>Choose how to pay</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et doloremagna aliqua. Ut</p>
                     </div>
                     <div class="process-section-card">
-                        <img src="images/head.png">
+                        <img src="static/images/head.png">
                         <h2>Choose how to pay</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et doloremagna aliqua. Ut</p>
                     </div>
@@ -170,12 +172,12 @@
         <h1>Why Buckyy?</h1>
         <div class="reasons-section">
             <div class="reason-1">
-                <img src="images/payment.png">
+                <img src="{% static 'images/payment.png' % }">
                 <h6>Pay in 30 days</h6>
                 <p>Enjoy what you’ve ordered right away. Pay for the products through Buckyy after trying them in real life.</p>
             </div>
             <div class="reason-2">
-                <img src="images/cart.png">
+                <img src="{% static 'images/cart.png' % }">
                 <h6>Pay in 4</h6>
                 <p>Split your payments into 4 equal installments, You just pay for the first installment and pay the rest every 2 weeks.</p>
             </div>
@@ -248,7 +250,7 @@
                 <button>Sign Up</button>
             </div>
             <div class="sign-up-section-right">
-                <img src="images/buckyy_logo_cropped.png">
+                <img src="mysite/static/images/buckyy_logo_cropped.png">
             </div>
         </div>
         
@@ -256,7 +258,7 @@
             <div class="footer-section">
                 <div class="footer-section-left">
                     <div class="footer-section-1">
-                        <img src="images/bucky_logo_white_cropped.png"><span class="footer-branding">&nbsp;Bucky</span>
+                        <img src="{% static 'images/bucky_logo_white_cropped.png'%}"><span class="footer-branding">&nbsp;Bucky</span>
                         <p>Phone: +88011 2222 3333</p>
                         <p>Email: hello@buckyy.com</p>
                         <p>Follow Bucky</p>
@@ -295,12 +297,13 @@
                     <div class="footer-section-bottom-right">
                     <div class="payment-method-section">
                         <p>Payment Options</p>
-                        <img src="images/american_express.png">
-                        <img src="images/visa.png">
-                        <img src="images/mastercard.png"><br>
-                        <img src="images/paypal.png">
-                        <img src="images/apple_pay.png">
-                        <img src="images/google_pay.jpg">
+                        <img src="{% static 'images/american_express.png'%}">
+                        <img src="{% static 'images/visa.png'%}">
+                        <img src="{% static 'images/paypal.png'%}">
+                        <img src="{% static 'images/mastercard.png'%}"><br>
+                        <img src="{% static 'images/paypal.png'%}">
+                        <img src="{% static 'images/apple_pay.png'%}">
+                        <img src="{% static 'images/google_pay.jpg'%}">
                         <p class="copyright-small-screen-view">Copyright<span class="copy-sign">&copy;</span>  2021-2022 Buckyy Private Limited Company. All rights reserved.</p>
                     </div>
                 </div>
