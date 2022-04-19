@@ -39,6 +39,12 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'ekyc',
+    'contact',
+    'geeks',
+    'books',
+    
+    
 ]
 
 MIDDLEWARE = [
